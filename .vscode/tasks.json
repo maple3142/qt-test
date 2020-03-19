@@ -1,0 +1,49 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "qmake",
+			"type": "shell",
+			"command": "qmake",
+			"args": ["project.pro", "CONFIG+=debug", "CONFIG+=console"],
+			"options": {
+				"cwd": "${workspaceRoot}",
+				"env": {
+					"PATH": "${env:PATH};C:\\Qt\\5.14.1\\mingw73_64\\bin"
+				}
+			},
+			"group": "build",
+			"presentation": {
+				"reveal": "always"
+			}
+		},
+		{
+			"label": "make",
+			"type": "shell",
+			"command": "make",
+			"options": {
+				"cwd": "${workspaceRoot}"
+			},
+			"dependsOn": ["qmake"],
+			"group": "build",
+			"presentation": {
+				"reveal": "always"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "clean",
+			"type": "shell",
+			"command": "make",
+			"args": ["clean"],
+			"options": {
+				"cwd": "${workspaceRoot}"
+			},
+			"group": "build",
+			"presentation": {
+				"reveal": "always"
+			},
+			"problemMatcher": []
+		}
+	]
+}

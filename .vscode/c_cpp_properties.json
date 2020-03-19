@@ -1,0 +1,16 @@
+{
+	"configurations": [
+		{
+			"name": "Win32",
+			"defines": ["_DEBUG", "UNICODE", "_UNICODE"],
+			"windowsSdkVersion": "10.0.17763.0",
+			"includePath": [
+				"C:\\Qt\\5.14.1\\mingw73_64\\include",
+				"C:\\Qt\\5.14.1\\mingw73_64\\include\\QtCore",
+				"C:\\Qt\\5.14.1\\mingw73_64\\include\\QtGui",
+				"C:\\Qt\\5.14.1\\mingw73_64\\include\\QtWidgets"
+			]
+		}
+	],
+	"version": 4
+}

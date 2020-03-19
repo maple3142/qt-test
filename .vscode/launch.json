@@ -1,0 +1,29 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "(gdb) Launch",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${workspaceFolder}/project.exe",
+			"args": [],
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"MIMode": "gdb",
+			"miDebuggerPath": "C:/ProgramData/chocolatey/bin/gdb.exe",
+			"setupCommands": [
+				{
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			],
+			"environment": [
+				{
+					"name": "PATH",
+					"value": "C:\\Qt\\5.14.1\\mingw73_64\\bin;${env:PATH}"
+				}
+			],
+			"preLaunchTask": "make"
+		}
+	]
+}
